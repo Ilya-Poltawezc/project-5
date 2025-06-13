@@ -1,0 +1,147 @@
+@import 
+ "fontsface",
+ "normalize",
+ "variables",
+ "globals",
+ "mixins";
+
+ .header-div {
+    @include flex-space-betwen;
+    margin-inline: 94px;
+    padding-block: 35px;
+    border-bottom: 2px solid var(--color-grey);
+
+    .header-henrik {
+        @include flex-center;
+        gap: 7px;
+
+        .svg-henrik {
+            width: 25px;
+            height: 28px;
+        }
+
+        .header-desc {
+            font-size: 19px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+        }
+    }
+
+    .header-list {
+        @include flex-center;
+        gap: 35px;
+
+        .header-link {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 1.7;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--color-dark);
+        }
+
+        .header-link.is-current {
+            border-bottom: 1.5px solid var(--color-dark);
+        }
+
+        .header-link:hover {
+            color: var(--color-grey);
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    .link-info {
+        text-decoration: none;
+        color: var(--color-dark)
+    }
+    .link-info:hover {
+        color: var(--color-grey);
+        transition-duration: var(--transition-duration);
+    }
+
+    .header-info {
+        @include flex-center;
+        gap: 7px;
+
+        .header-desc {
+            font-size: 19px;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .svg-info {
+            width: 26px;
+            aspect-ratio: 1;
+        }
+    }
+ }
+
+ .john-div {
+    @include flex-space-betwen;
+    margin-inline: 94px;
+    margin-top: 49px;
+
+    .div-block {
+        @include flex-direction;
+    }
+
+    .div-block-1 {
+        @include flex-center;
+        gap: 10px;
+
+        .john-desc {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 1;
+        }
+
+        .john-button-1 {
+            @include button;
+        }
+        .john-button-2 {
+            @include button;
+            width: 74px;
+        }
+
+        .john-button-1:hover {
+            color: var(--color-light);
+            background-color: var(--color-grey);
+            transition-duration: var(--transition-duration);
+        }
+        .john-button-2:hover {
+            color: var(--color-light);
+            background-color: var(--color-grey);
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    .john-title {
+        margin-top: 11px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 77px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        border-bottom: 1.5px solid var(--color-grey);
+    }
+
+    .john-description {
+        margin-top: 291px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 1.3;
+    }
+ }

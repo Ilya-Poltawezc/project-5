@@ -1,0 +1,33 @@
+@mixin flex-space-betwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+@mixin button {
+    @include flex-center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 11px; 
+            text-transform: uppercase;
+            width: 39px;
+            height: 20px;
+            background-color: transparent;
+            border-radius: 55px;
+            border: 1px solid var(--color-dark);
+}
