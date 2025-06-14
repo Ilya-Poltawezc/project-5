@@ -37,3 +37,10 @@
             border-radius: 55px;
             border: 1px solid var(--color-dark);
 }
+
+@mixin button-hover {
+    color: var(--color-light);
+    background-color: var(--color-grey);
+    border: none;
+    transition-duration: var(--transition-duration);
+}
