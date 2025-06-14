@@ -303,6 +303,8 @@ svg * {
   align-items: start;
   margin-inline: 94px;
   margin-top: 49px;
+  padding-bottom: 49px;
+  border-bottom: 2px solid var(--color-grey);
 }
 .john-div .div-block {
   display: flex;
@@ -358,12 +360,14 @@ svg * {
 }
 .john-div .div-block-1 .john-button-1:hover {
   color: var(--color-light);
+  border: none;
   background-color: var(--color-grey);
   transition-duration: var(--transition-duration);
 }
 .john-div .div-block-1 .john-button-2:hover {
   color: var(--color-light);
   background-color: var(--color-grey);
+  border: none;
   transition-duration: var(--transition-duration);
 }
 .john-div .john-title {
@@ -383,6 +387,353 @@ svg * {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.3;
+}
+
+.latest .latest-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-inline: 94px;
+}
+.latest .latest-post .svg-latest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 100px;
+}
+.latest .latest-post .svg-latest .svg-info {
+  width: 17px;
+  aspect-ratio: 1;
+}
+.latest .latest-post .svg-latest .latest-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.latest .latest-post .latest-link {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  border-bottom: 1px solid;
+}
+.latest .latest-post .latest-link:hover {
+  color: var(--color-grey);
+  transition-duration: var(--transition-duration);
+}
+.latest .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-inline: 94px;
+  margin-top: 37px;
+}
+.latest .filter .filter-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.latest .filter .filter-1 .filter-1-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.latest .filter .filter-1 .button-f-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  width: 39px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 55px;
+  border: 1px solid var(--color-dark);
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+.latest .filter .filter-1 .button-f-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  width: 39px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 55px;
+  border: 1px solid var(--color-dark);
+  width: 62px;
+}
+.latest .filter .filter-1 .button-f-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  width: 39px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 55px;
+  border: 1px solid var(--color-dark);
+  width: 55px;
+}
+.latest .filter .filter-1 .button-f-1:hover {
+  background-color: var(--color-grey);
+  border: none;
+  transition-duration: var(--transition-duration);
+}
+.latest .filter .filter-1 .button-f-2:hover {
+  color: var(--color-light);
+  background-color: var(--color-grey);
+  border: none;
+  transition-duration: var(--transition-duration);
+}
+.latest .filter .filter-1 .button-f-3:hover {
+  color: var(--color-light);
+  background-color: var(--color-grey);
+  border: none;
+  transition-duration: var(--transition-duration);
+}
+.latest .filter-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.latest .filter-2 .filter-2-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.latest .filter-2 .filter-2-p .filter-b {
+  border-bottom: 1px solid;
+}
+.latest .filter-2 .button-f-4 {
+  background-color: transparent;
+  border: none;
+}
+.latest .filter-2 .button-f-4 .svg-button {
+  width: 15px;
+  height: 8px;
+}
+.latest .filter-2 .button-f-4 .svg-button:hover {
+  color: var(--color-light);
+  transition-duration: var(--transition-duration);
+}
+.latest .filter-2 .button-f-4:hover {
+  background-color: var(--color-grey);
+  transition-duration: var(--transition-duration);
+  border-radius: 50%;
+}
+.latest .block-latest {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: 94px;
+  margin-top: 39px;
+  column-gap: 40px;
+  padding-bottom: 122px;
+  border-bottom: 1px solid;
+}
+.latest .block-latest .block-1 {
+  width: 845px;
+}
+.latest .block-button {
+  margin-top: 27px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.latest .block-button .block-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.latest .block-button .block-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  width: 39px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 55px;
+  border: 1px solid var(--color-dark);
+  width: 60px;
+}
+.latest .block-button .block-b:hover {
+  color: var(--color-light);
+  background-color: var(--color-grey);
+  border: none;
+  transition-duration: var(--transition-duration);
+}
+.latest .block-1-h2 {
+  margin-top: 9px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.latest .block-h2 {
+  margin-top: 9px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  text-align: left;
+}
+.latest .block-icard {
+  margin-top: 80px;
+}
+.latest .block-2icard {
+  margin-top: 65px;
+}
+
+.popular .popular-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-left: 94px;
+  margin-right: 440px;
+  margin-top: 113px;
+}
+.popular .popular-div .pop-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.popular .popular-div .pop-svg-1 {
+  width: 18px;
+  height: 19px;
+}
+.popular .popular-div .pop-svg-2 {
+  width: 16px;
+  height: 19px;
+}
+.popular .popular-div .pop-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.popular .popular-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 94px;
+  margin-top: 37px;
+  column-gap: 40px;
+}
+.popular .popular-block .block-button {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+}
+.popular .popular-block .block-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.popular .popular-block .block-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
+  width: 39px;
+  height: 20px;
+  background-color: transparent;
+  border-radius: 55px;
+  border: 1px solid var(--color-dark);
+  width: 56px;
+}
+.popular .popular-block .block-1-h2 {
+  margin-top: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 37px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+}
+.popular .popular-block .pop-img {
+  width: 630px;
+  height: 470px;
+}
+.popular .popular-block .block-b:hover {
+  color: var(--color-light);
+  background-color: var(--color-grey);
+  border: none;
+  transition-duration: var(--transition-duration);
+}
+.popular .pop-card {
+  margin-top: 37px;
+}
+.popular .pop-h2 {
+  width: 236px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
