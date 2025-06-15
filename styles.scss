@@ -455,6 +455,7 @@
     .jenny-block {
         padding-top: 51px;
         margin-left: 74px;
+        padding-bottom: 46px;
 
         .jenny-block-button {
             display: flex;
@@ -500,6 +501,211 @@
             font-size: 22px;
             line-height: 1.3;
             margin-top: 351px;
+        }
+    }
+ }
+
+ .stuff {
+    .stuff-div {
+        @include flex-end-space-between;
+        margin-top: 145px;
+        margin-inline: 94px;
+
+        .stuff-div-button {
+            @include flex-center;
+            gap: 8px;
+
+            .stuff-button {
+                @include flex-center;
+                background-color: transparent;
+                border: none;
+            }
+
+            @keyframes rotate {
+               50% {
+                    rotate: 180deg;
+                }
+            }
+
+            .stuff-svg {
+                width: 19px;
+                aspect-ratio: 1;
+            }
+
+            .stuff-svg:hover {
+                animation: rotate 2s;
+                transition-duration: var(--transition-duration);
+                color: var(--color-grey);
+            }
+        }
+
+        .stuff-desc {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 1x;
+            text-transform: uppercase;
+        }
+
+        .stuff-link {
+            color: var(--color-dark);
+            padding-bottom: 2px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 1;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 1px solid;
+        }
+
+        .stuff-link:hover {
+            color: var(--color-grey);
+            transition-duration: var(--transition-duration);
+        }
+    }
+
+    .stuff-block {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 37px;
+        margin-inline: 104px;
+
+        .stuff-card {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .desc-block {
+                margin-top: 23px;
+                width: 222px;
+            }
+
+            .stuff-button-block {
+                @include button;
+                width: 66px;
+            }
+
+            .stuff-button-block:hover {
+                @include button-hover;
+            }
+        }
+
+        .stuff-description {
+            margin-top: 17px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19px;
+            line-height: 1.3;
+            text-transform: uppercase;
+            border-bottom: 1px solid;
+        }
+    }
+
+    .stuff-title {
+        margin-top: 125px;
+        margin-inline: 94px;
+        padding-block: 32px;
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 100px;
+        line-height: 1;
+        text-transform: uppercase;
+        border-block: 2px solid;
+    }
+ }
+
+ .footer {
+    .footer-block {
+        @include flex-center;
+        margin-top: 180px;
+
+        .footer-list {
+            @include flex-center;
+            gap: 35px;
+            padding-bottom: 35px;
+            padding-inline: 42px;
+            border-bottom: 1px solid;
+
+            .footer-link {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 1.7;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: var(--color-dark);
+            }
+
+            .footer-link:hover {
+                color: var(--color-grey);
+                transition-duration: var(--transition-duration);
+            }
+        }
+    }
+
+    .footer-contacts {
+        @include flex-center;
+        margin-top: 30px;
+
+        .contact-list {
+            @include flex-center;
+            gap: 30px;
+
+            .contact-link {
+                color: var(--color-dark);
+                padding: 10px;
+            }
+
+            .svg-footer {
+                width: 17px;
+                aspect-ratio: 1;
+            }
+
+            .contact-link:hover {
+                color: var(--color-grey);
+                transition-duration: var(--transition-duration);
+            }
+        }
+    }
+
+    .footer-cont {
+        @include flex-center;
+        margin-top: 55px;
+        gap: 5px;
+        padding-bottom: 48px;
+
+        .footer-desc {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: var(--color-grey);
+        }
+
+        .footer-link-cont {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: var(--color-dark);
+        }
+
+        .footer-link-cont:hover {
+            color: var(--color-grey);
+            transition-duration: var(--transition-duration);
         }
     }
  }
