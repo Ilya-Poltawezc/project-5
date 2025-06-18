@@ -710,3 +710,195 @@
     }
  }
 
+ @media (max-width: 1600px) {
+    .john-div .john-title {
+        font-size: 4vw;
+    }
+    .latest .block-latest .block-1 {
+        width: 44vw;
+    }
+    .popular .popular-block .pop-img {
+        width: auto;
+        height: auto;
+    }
+    .latest .block-h2 {
+        font-size: 1.5vw;
+    }
+    .stuff .stuff-title {
+        font-size: 5.2vw;
+    }
+ }
+
+ @media (max-width: 1376px) {
+    .header-img {
+        width: 30vw;
+    }
+    .john-div .john-description {
+        margin-top: 33vh;
+    }
+    .popular .popular-div {
+        margin-right: 20.5vw;
+    }
+    .stuff .stuff-block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
+ @media (max-width: 1000px) {
+    .header-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .john-div {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .latest .block-latest {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+    .popular .popular-block {
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: 94px;
+        row-gap: 20px;
+    }
+    .popular .popular-block .block-1-h2 {
+        font-size: 2.5vw;
+    }
+    .pop-trends {
+       display: block;
+    }
+    .popular .popular-div {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-inline: 94px;
+    }
+    .popular .pop-h2 {
+        width: auto;
+    }
+    .stuff .stuff-block {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+    .latest .block-h2 {
+        font-size: 1.9vw;
+    }
+    .latest .block-1-h2 {
+        font-size: 25px;
+    }
+ }
+
+ @media (max-width: 748px) {
+    .john-div .john-title {
+        font-size: 8vw;
+    }
+    .header-div .header-list {
+        flex-direction: column;
+    }
+    .john-div {
+        justify-content: center;
+        align-items: center;
+    }
+    .john-div .div-block {
+        align-items: center;
+    }
+    .latest .filter {
+        flex-direction: column;
+    }
+    .latest .block-latest {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .popular .popular-block {
+        grid-template-columns: 1fr;
+    }
+    .stuff .stuff-block {
+        grid-template-columns: 1fr;
+    }
+    .jenny .jenny-block .jenny-title {
+        width: 60vw;
+        font-size: 60px;
+    }
+    .header-img {
+        width: 60vw;
+    }
+ }
+
+ @media (max-width: 500px) {
+    .latest .latest-post {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .latest .block-h2 {
+        font-size: 2.9vw;
+    }
+    .footer .footer-block .footer-list {
+        flex-direction: column;
+    }
+    .footer .footer-block {
+        margin-top: 80px;
+    }
+    .popular .popular-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        row-gap: 10px;
+    }
+    .stuff .stuff-div {
+        flex-direction: column;
+        align-items: start;
+        row-gap: 10px;
+    }
+    .latest .block-latest .block-1 {
+        width: 54vw;
+    }
+    .jenny .jenny-block .jenny-title {
+        font-size: 40px;
+    }
+    .stuff .stuff-block {
+        margin-inline: 0px;
+    }
+ }
+
+ @media (max-width: 350px) {
+    .latest .block-latest .block-1 {
+        width: 74vw;
+    }
+    .jenny .jenny-block {
+        margin-left: 34px;
+    }
+    .latest .filter {
+        margin-inline: 34px;
+    }
+    .latest .latest-post {
+        margin-inline: 34px;
+    }
+    .latest .block-latest .block-2 {
+        width: 74vw;
+    }
+    .latest .block-latest .block-3 {
+        width: 74vw;
+    }
+    .popular .popular-div {
+        margin-inline: 34px;
+    }
+    .popular .popular-block {
+        margin-inline: 34px;
+    }
+    .john-div .john-description {
+        margin-top: 13vh;
+    }
+    .latest .block-h2 {
+        font-size: 5.8vw;
+    }
+    .popular .popular-block .block-1-h2 {
+        font-size: 5.5vw;
+    }
+ }
+
